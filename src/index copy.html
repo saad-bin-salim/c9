@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white">
+      <div
+        class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4"
+      >
+        <div class="text-2xl font-bold">BNGOON</div>
+
+        <!-- Mobile menu button -->
+        <button class="lg:hidden text-white focus:outline-none" id="menuButton">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex space-x-8 text-sm">
+          <a href="#" class="hover:text-yellow-500">Home</a>
+          <a href="#" class="hover:text-yellow-500">About Us</a>
+          <a href="#" class="hover:text-yellow-500">Property</a>
+          <a href="#" class="hover:text-yellow-500">Services</a>
+          <a href="#" class="hover:text-yellow-500">Agents</a>
+          <a href="#" class="hover:text-yellow-500">Contact Us</a>
+        </nav>
+
+        <!-- Schedule button -->
+        <button
+          class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-md text-sm font-semibold hidden lg:block"
+          id="scheduleButton"
+        >
+          Schedule a Visit
+        </button>
+      </div>
+
+      <!-- Mobile menu links (hidden by default) -->
+      <div class="lg:hidden" id="mobileMenu" style="display: none">
+        <nav class="flex flex-col space-y-4 text-sm px-6 py-4">
+          <a href="#" class="hover:text-yellow-500">Home</a>
+          <a href="#" class="hover:text-yellow-500">About Us</a>
+          <a href="#" class="hover:text-yellow-500">Property</a>
+          <a href="#" class="hover:text-yellow-500">Services</a>
+          <a href="#" class="hover:text-yellow-500">Agents</a>
+          <a href="#" class="hover:text-yellow-500">Contact Us</a>
+          <button
+            class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-md text-sm font-semibold"
+            id="scheduleButtonMobile"
+          >
+            Schedule a Visit
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Popup modal -->
+    <div
+      id="schedulePopup"
+      class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden"
+    >
+      <div class="bg-white w-full max-w-md rounded-lg shadow-lg p-6">
+        <h2 class="text-xl font-bold mb-4 text-gray-900">Schedule a Visit</h2>
+        <form>
+          <label class="block mb-2 text-sm font-semibold text-gray-700">
+            Name
+            <input
+              type="text"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
+              placeholder="Your Name"
+              required
+            />
+          </label>
+          <label class="block mb-2 text-sm font-semibold text-gray-700">
+            Email
+            <input
+              type="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
+              placeholder="Your Email"
+              required
+            />
+          </label>
+          <label class="block mb-4 text-sm font-semibold text-gray-700">
+            Preferred Date
+            <input
+              type="date"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500"
+              required
+            />
+          </label>
+          <div class="flex justify-end space-x-4">
+            <button
+              type="button"
+              class="bg-gray-500 text-white px-4 py-2 rounded-md"
+              id="closePopup"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-md font-semibold"
+            >
+              Schedule
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Toggle mobile menu
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobileMenu");
+          menu.style.display =
+            menu.style.display === "none" || menu.style.display === ""
+              ? "block"
+              : "none";
+        });
+
+      // Show popup
+      const showPopup = () => {
+        document.getElementById("schedulePopup").classList.remove("hidden");
+      };
+
+      // Hide popup
+      const hidePopup = () => {
+        document.getElementById("schedulePopup").classList.add("hidden");
+      };
+
+      document
+        .getElementById("scheduleButton")
+        .addEventListener("click", showPopup);
+      document
+        .getElementById("scheduleButtonMobile")
+        .addEventListener("click", showPopup);
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", hidePopup);
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-yellow-100 py-16">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:flex lg:justify-between lg:items-center"
+      >
+        <div class="lg:w-1/2 space-y-6">
+          <p class="text-sm text-yellow-700 uppercase">
+            Bngoong’s Best Real Estate Agent
+          </p>
+          <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+            Find Your Dream Home Today
+          </h1>
+          <p class="text-lg text-gray-700">
+            We are ready to assist you in finding your dream home! Look no
+            further than Bngoong’s best agents.
+          </p>
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+            <span class="text-gray-600">200+ Exclusive Agents</span>
+          </div>
+        </div>
+        <div class="lg:w-1/3 bg-white shadow-md p-8 rounded-lg mt-10 lg:mt-0">
+          <h2 class="text-xl font-semibold text-gray-800">
+            Real Estate Inquiry Form
+          </h2>
+          <form class="mt-6 space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-yellow-500"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-yellow-500"
+            />
+            <textarea
+              id="question"
+              name="question"
+              required
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none"
+              placeholder="Ask your question here..."
+              rows="4"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-yellow-500 text-gray-900 py-2 rounded-md font-semibold hover:bg-yellow-600"
+            >
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse by Country -->
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="flex justify-between items-center mb-10">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800">
+              Browse Property by Country
+            </h2>
+            <p class="mt-2 text-gray-600">
+              Explore a wide range of options by country.
+            </p>
+          </div>
+          <a href="#" class="text-yellow-500 font-medium hover:underline">
+            See all countries →
+          </a>
+        </div>
+
+        <!-- Country Cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="United States"
+              class="w-full h-32 object-cover transition-transform hover:scale-110"
+            />
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold text-gray-800">United States</h3>
+              <p class="text-gray-500 mt-2">12 Properties</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Spain"
+              class="w-full h-32 object-cover transition-transform hover:scale-110"
+            />
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold text-gray-800">Spain</h3>
+              <p class="text-gray-500 mt-2">8 Properties</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="United Kingdom"
+              class="w-full h-32 object-cover transition-transform hover:scale-110"
+            />
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold text-gray-800">
+                United Kingdom
+              </h3>
+              <p class="text-gray-500 mt-2">9 Properties</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Australia"
+              class="w-full h-32 object-cover transition-transform hover:scale-110"
+            />
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold text-gray-800">Australia</h3>
+              <p class="text-gray-500 mt-2">6 Properties</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            <img
+              src="https://via.placeholder.com/150"
+              alt="France"
+              class="w-full h-32 object-cover transition-transform hover:scale-110"
+            />
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold text-gray-800">France</h3>
+              <p class="text-gray-500 mt-2">5 Properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="flex justify-between items-center mb-10">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800">
+              Explore Our Latest Properties
+            </h2>
+            <p class="mt-2 text-gray-600">
+              Browse from a wide range of properties recently added.
+            </p>
+          </div>
+          <a href="#" class="text-yellow-500 font-medium hover:underline">
+            See all properties →
+          </a>
+        </div>
+
+        <!-- Property Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Property Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Property 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">$4,500</h3>
+              <p class="text-gray-600 mt-2">Stunning Oceanfront Villa</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="text-gray-500">Miami, FL</span>
+                <span class="text-sm text-gray-500">2 Beds, 2 Baths</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Property 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">$5,000</h3>
+              <p class="text-gray-600 mt-2">Luxury Penthouse</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="text-gray-500">New York, NY</span>
+                <span class="text-sm text-gray-500">3 Beds, 3 Baths</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Card 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Property 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">$3,800</h3>
+              <p class="text-gray-600 mt-2">Cozy Beach Cottage</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="text-gray-500">Santa Monica, CA</span>
+                <span class="text-sm text-gray-500">2 Beds, 1 Bath</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover Our Services -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Discover Our Services
+          </h2>
+          <p class="mt-4 text-gray-600">
+            Get the services you need to simplify your property journey.
+          </p>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1: Sell a Property -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-yellow-500 text-white rounded-full mx-auto"
+            >
+              🏠
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Sell a Property
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Connect with buyers quickly and sell your property hassle-free.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 px-4 py-2 text-yellow-500 border border-yellow-500 rounded-md font-medium hover:bg-yellow-500 hover:text-white"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Card 2: Buy a Property -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-yellow-500 text-white rounded-full mx-auto"
+            >
+              🏘️
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Buy a Property
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Explore a variety of listings and find the perfect property for
+              you.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 px-4 py-2 text-yellow-500 border border-yellow-500 rounded-md font-medium hover:bg-yellow-500 hover:text-white"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Card 3: Rent a Property -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-yellow-500 text-white rounded-full mx-auto"
+            >
+              🔑
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Rent a Property
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Browse rental options tailored to your budget and preferences.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 px-4 py-2 text-yellow-500 border border-yellow-500 rounded-md font-medium hover:bg-yellow-500 hover:text-white"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Why Choose Bangoonan?
+          </h2>
+          <p class="mt-4 text-gray-600">
+            We provide the best services to help you find your dream property.
+          </p>
+        </div>
+
+        <!-- Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <!-- Feature 1 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-yellow-500 text-white rounded-full text-2xl font-bold"
+            >
+              💬
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Direct Communication
+            </h3>
+            <p class="mt-2 text-gray-600">
+              We connect you directly with expert agents to guide you.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-yellow-500 text-white rounded-full text-2xl font-bold"
+            >
+              📈
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Extensive Market Knowledge
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Stay updated with the latest market trends and opportunities.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-yellow-500 text-white rounded-full text-2xl font-bold"
+            >
+              🤝
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-gray-800">
+              Strong Negotiations
+            </h3>
+            <p class="mt-2 text-gray-600">
+              Our agents negotiate the best deals for you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-10 text-center">
+          <a
+            href="#"
+            class="inline-block px-6 py-3 bg-yellow-500 text-white rounded-md font-semibold hover:bg-yellow-600"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Footer Top -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and About -->
+          <div>
+            <h3 class="text-white text-lg font-semibold">BNGOON</h3>
+            <p class="mt-4 text-sm">
+              Helping you find your dream home across the world with the best
+              agents and services.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-white text-lg font-semibold">Quick Links</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+              <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+              <li><a href="#" class="hover:text-yellow-500">Property</a></li>
+              <li><a href="#" class="hover:text-yellow-500">Services</a></li>
+              <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Location -->
+          <div>
+            <h3 class="text-white text-lg font-semibold">Location</h3>
+            <p class="mt-4 text-sm">
+              123 Main Street <br />
+              New York, USA
+            </p>
+            <p class="mt-2 text-sm">
+              <strong>Phone:</strong> +1 234 567 890 <br />
+              <strong>Email:</strong> info@bngoong.com
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-white text-lg font-semibold">Follow Us</h3>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.729 0-1.325.597-1.325 1.325v21.351c0 .729.596 1.324 1.325 1.324h11.49v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.894-4.787 4.66-4.787 1.325 0 2.465.099 2.798.143v3.24h-1.919c-1.504 0-1.795.714-1.795 1.76v2.316h3.587l-.467 3.622h-3.12v9.293h6.105c.729 0 1.325-.595 1.325-1.324v-21.351c0-.728-.596-1.325-1.325-1.325z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.014-.608 1.794-1.57 2.163-2.723-.951.564-2.005.974-3.127 1.196-.897-.957-2.173-1.555-3.594-1.555-2.717 0-4.917 2.2-4.917 4.917 0 .386.044.762.128 1.124-4.083-.205-7.702-2.162-10.126-5.138-.423.725-.666 1.566-.666 2.465 0 1.701.866 3.2 2.181 4.078-.804-.026-1.562-.246-2.226-.616v.062c0 2.375 1.693 4.356 3.946 4.804-.412.112-.846.171-1.294.171-.317 0-.626-.031-.927-.088.627 1.956 2.444 3.379 4.599 3.417-1.684 1.319-3.808 2.105-6.114 2.105-.398 0-.79-.023-1.176-.069 2.179 1.397 4.768 2.212 7.548 2.212 9.053 0 14.002-7.496 14.002-13.986 0-.213-.005-.426-.014-.637.961-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.04c-5.522 0-10 4.477-10 10 0 4.992 3.657 9.129 8.438 9.878.615.113.844-.268.844-.596v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.56-1.417-1.366-1.795-1.366-1.795-1.117-.763.084-.747.084-.747 1.235.086 1.884 1.267 1.884 1.267 1.096 1.874 2.876 1.332 3.576 1.018.11-.793.428-1.332.776-1.638-2.665-.306-5.467-1.333-5.467-5.931 0-1.309.467-2.381 1.236-3.221-.124-.303-.536-1.527.116-3.182 0 0 1.009-.322 3.301 1.229a11.487 11.487 0 013.003-.404c1.019.005 2.046.138 3.003.404 2.29-1.551 3.298-1.229 3.298-1.229.653 1.655.241 2.879.118 3.182.77.841 1.234 1.912 1.234 3.221 0 4.609-2.806 5.623-5.475 5.921.439.377.833 1.123.833 2.261v3.354c0 .33.228.713.845.594 4.781-.75 8.437-4.886 8.437-9.878 0-5.523-4.478-10-10-10z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="mt-12 border-t border-gray-800 pt-8 flex justify-between items-center text-sm"
+        >
+          <p>&copy; 2025 Bngoong. All rights reserved.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-yellow-500">Privacy</a>
+            <a href="#" class="hover:text-yellow-500">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
