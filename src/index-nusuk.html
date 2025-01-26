@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      .bg-n-primary {
+        background-color: #23486A !important;
+      }
+
+      .bg-n-secondary {
+        background-color: #3B6790 !important;
+      }
+
+      .bg-n-light {
+        background-color: #F2EFE7 !important;
+      }
+
+      .bg-n-algae {
+        background-color: #4C7B8B !important;
+      }
+
+      .bg-n-pale-green {
+        background-color: #A6CDC6 !important;
+      }
+
+      .text-n-gold {
+        color: #EFB036 !important;
+      }
+
+      .hover\:text-n-gold:hover {
+        color: #FFD700 !important;
+      }
+
+      .border-n-primary {
+        border-color: #E6CBA8 !important;
+      }
+
+      .border-n-secodary {
+        color: #FFFFF0 !important;
+      }
+
+      .text-n-primary {
+        color: #23486A !important;
+      }
+
+      .text-n-secondary {
+        color: #FFFFF0 !important;
+      }
+
+      .text-n-grey {
+        color: #4C585B !important;
+      }
+
+      .text-n-grey-secondary {
+        color: #7E99A3 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-n-light">
+  <!-- Header Section -->
+  <header class="w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="text-n-primary text-xl font-semibold">Nusuk</span>
+      </div>
+      <!-- Navigation and Button -->
+      <div class="flex items-center space-x-6">
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
+          <a href="#" class="text-n-primary hover:text-n-gold transition">About Us</a>
+          <a href="#" class="text-n-primary hover:text-n-gold transition">Services</a>
+          <a href="#" class="text-n-primary hover:text-n-gold transition">Hajj & Umrah</a>
+          <a href="#" class="text-n-primary hover:text-n-gold transition">Packages</a>
+        </nav>
+        <button
+          class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
+          Contact Us
+        </button>
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-start bg-gray-50 px-4 py-2">
+      <a href="#" class="text-mecca-ivory font-medium mb-2">Home</a>
+      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">About Us</a>
+      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Services</a>
+      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Hajj & Umrah</a>
+      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Packages</a>
+      <button class="bg-black border-solid border text-mecca-ivory px-4 py-2 rounded-full hover:bg-gray-800 transition">
+        Contact Us
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="container mx-auto py-32 px-6">
+    <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <!-- Left Section -->
+      <div>
+        <div class="flex items-center text-n-primary font-medium mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.5 10.5V7.125c0-2.211-1.38-4.125-3.75-4.125-2.308 0-3.75 1.913-3.75 4.125V10.5m-3 0a3 3 0 013-3h9a3 3 0 013 3v6a3 3 0 01-3 3H7.5a3 3 0 01-3-3v-6z" />
+          </svg>
+          <span>Begin your sacred journey with Nusuk.</span>
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-bold text-n-primary mb-4">
+          Religious Solutions <br> by Nusuk
+        </h1>
+        <p class="text-n-grey mb-6">
+          At Nusuk Travels, we pride ourselves on offering a wide range of services tailored to your needs. From
+          seamless visa processing to reliable recruitment solutions, we ensure excellence in every step of your
+          journey.
+        </p>
+        <div class="flex items-center space-x-4 mb-6">
+          <button
+            class="px-6 py-3 bg-n-primary text-n-secondary rounded-lg hover:bg-gray-800 transition font-semibold">Get a
+            Quote</button>
+          <div class="flex items-center text-n-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 3h16.5M4.5 6.75h15a.75.75 0 01.75.75v11.25a.75.75 0 01-.75.75H4.5a.75.75 0 01-.75-.75V7.5a.75.75 0 01.75-.75zm6 3.75h3" />
+            </svg>
+            <span>+123 456 7891</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div>
+        <div class="relative bg-blue-50 rounded-lg shadow-md overflow-hidden">
+          <img src="./haj.png" alt="Insurance Image" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Acheivments -->
+  <section class="bg-n-secondary py-12">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 text-center text-n-secondary gap-8">
+        <!-- Column 1 -->
+        <div class="flex flex-col items-center">
+          <h2 class="text-4xl font-bold">34K+</h2>
+          <p class="mt-2 text-sm sm:text-base">Success Stories</p>
+        </div>
+        <!-- Column 2 -->
+        <div class="flex flex-col items-center border-l border-white pl-8">
+          <h2 class="text-4xl font-bold">210+</h2>
+          <p class="mt-2 text-sm sm:text-base">Professional Team</p>
+        </div>
+        <!-- Column 3 -->
+        <div class="flex flex-col items-center border-l border-white pl-8">
+          <h2 class="text-4xl font-bold">54K+</h2>
+          <p class="mt-2 text-sm sm:text-base">Branches Nationwide</p>
+        </div>
+        <!-- Column 4 -->
+        <div class="flex flex-col items-center border-l border-white pl-8">
+          <h2 class="text-4xl font-bold">35K+</h2>
+          <p class="mt-2 text-sm sm:text-base">Worldwide Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Images Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Vertical Image (Left Column) -->
+        <img src="./haj.webp" alt="Main Image" class="rounded-lg shadow-md w-full h-[500px] object-cover lg:col-span-1">
+
+        <!-- Smaller Images (Right Column) -->
+        <div class="grid grid-cols-1 gap-6">
+          <img src="./tour.webp" alt="Supporting Image 1" class="rounded-lg shadow-md w-full h-[240px] object-cover">
+          <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Supporting Image 2"
+            class="rounded-lg shadow-md w-full h-[240px] object-cover">
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div>
+        <h3 class="text-n-grey text-sm uppercase tracking-wide mb-2">About Us</h3>
+        <h1 class="text-3xl lg:text-4xl font-bold text-n-primary mb-4">
+          Nusuk Solutions Private
+        </h1>
+        <h4 class="text-lg font-medium text-n-gold mb-4">Our Vision</h4>
+        <p class="text-n-primary mb-6 leading-relaxed">
+          Nusuk Travels has been delivering excellence in travel and recruitment services for over a decade. With a
+          focus on innovation and customer satisfaction, our mission is to make every journey seamless and memorable."
+
+          "Whether you’re embarking on a spiritual journey, seeking career opportunities abroad, or planning your next
+          big adventure, Nusuk Travels is here to guide you every step of the way..
+        </p>
+        <a href="#" class="bg-n-primary text-n-secondary py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <!-- Logos Section -->
+    <div class="mt-12 flex flex-wrap justify-center gap-8 items-center border-t border-gray-200 pt-8">
+      <img src="./haj.png" alt="Logo 1" class="h-12">
+      <img src="./tour.png" alt="Logo 2" class="h-12">
+      <img src="./tour.webp" alt="Logo 3" class="h-12">
+      <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Logo 4" class="h-12">
+      <img src="./jobs.webp" alt="Logo 5" class="h-12">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="max-w-6xl mx-auto px-4 pb-32">
+    <!-- Section Header -->
+    <div class="mb-8 flex justify-between items-center">
+      <div>
+        <h3 class="text-sm font-semibold uppercase text-n-primary">Our Services</h3>
+        <h2 class="text-4xl font-bold text-n-primary mt-2">Our Range of Services</h2>
+      </div>
+      <a href="#" class="text-n-primary text-sm font-medium">See All Services</a>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Visa Processing</h4>
+          <p class="text-n-grey mt-2">Smooth and reliable visa approvals. Smooth and reliable visa approvals. Smooth and
+            reliable visa approvals. Smooth and reliable visa approvals.</p>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Recruitment Assistance</h4>
+          <p class="text-n-grey mt-2">Connecting businesses with top talent. Connecting businesses with top talent.
+            Connecting businesses with top talent. Connecting businesses with top talent.</p>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Visa Processing</h4>
+          <p class="text-n-grey mt-2">Smooth and reliable visa approvals. Smooth and reliable visa approvals. Smooth and
+            reliable visa approvals. Smooth and reliable visa approvals.</p>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Recruitment Assistance</h4>
+          <p class="text-n-grey mt-2">Connecting businesses with top talent. Connecting businesses with top talent.
+            Connecting businesses with top talent. Connecting businesses with top talent.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Choose us -->
+  <div class="bg-n-primary">
+    <div class="max-w-6xl mx-auto p-8 ">
+      <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-8">
+        <!-- Left Section -->
+        <div class="text-n-secondary">
+          <h3 class="text-sm uppercase tracking-wide mb-4">Why Choose Us</h3>
+          <h1 class="text-4xl font-bold mb-8">Nusuk Travels - Your Trusted Travel Partner.</h1>
+          <div class="space-y-6">
+            <!-- Experience and Expertise -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13 16h-1v-4h-1m4 4v-1a2 2 0 00-2-2h-1a2 2 0 00-2 2v1m8-4h.01M4 16h.01M8.125 4.515A4.48 4.48 0 0112 3a4.48 4.48 0 013.875 1.515M6.375 20.485A4.48 4.48 0 0112 22a4.48 4.48 0 015.625-1.515" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold">Visa Processing</h4>
+                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
+                  Smooth and reliable visa approvals.</p>
+              </div>
+            </div>
+            <!-- Experience and Expertise -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13 16h-1v-4h-1m4 4v-1a2 2 0 00-2-2h-1a2 2 0 00-2 2v1m8-4h.01M4 16h.01M8.125 4.515A4.48 4.48 0 0112 3a4.48 4.48 0 013.875 1.515M6.375 20.485A4.48 4.48 0 0112 22a4.48 4.48 0 015.625-1.515" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold">Visa Processing</h4>
+                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
+                  Smooth and reliable visa approvals.</p>
+              </div>
+            </div>
+            <!-- Experience and Expertise -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13 16h-1v-4h-1m4 4v-1a2 2 0 00-2-2h-1a2 2 0 00-2 2v1m8-4h.01M4 16h.01M8.125 4.515A4.48 4.48 0 0112 3a4.48 4.48 0 013.875 1.515M6.375 20.485A4.48 4.48 0 0112 22a4.48 4.48 0 015.625-1.515" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold">Visa Processing</h4>
+                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
+                  Smooth and reliable visa approvals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div class="relative">
+          <img src="./haj.png" alt="Insurance Image" class="rounded-lg shadow-lg">
+          <div class="absolute top-8 right-8 bg-n-light rounded-lg px-4 py-2 shadow-md flex items-center">
+            <span class="text-n-primary text-2xl font-bold">90%</span>
+            <div class="ml-4">
+              <p class="text-xs text-n-grey">Customer Satisfaction</p>
+              <div class="flex items-center">
+                <span class="text-n-gold">★ ★ ★ ★ ★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <section class="container mx-auto px-4 py-32">
+    <div class="text-center mb-10">
+      <h4 class="text-lg font-medium uppercase text-n-grey-secondary tracking-wide">Pricing Plans</h4>
+      <h1 class="text-3xl md:text-4xl font-bold text-n-primary">Nusuk Travel Plans</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-6 items-center justify-center">
+      <!-- Basic Plan -->
+      <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
+        <h2 class="text-4xl font-bold text-n-primary">$3500 <span class="text-lg font-normal text-n-grey">/Month</span>
+        </h2>
+        <h3 class="text-xl font-semibold text-n-primary mt-4">Basic Plan</h3>
+        <p class="text-gray-500 mt-2">Quality and trust in every service.</p>
+        <hr class="my-4">
+        <div>
+          <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
+          <ul class="list-disc list-inside text-n-grey mt-2">
+            <li>Ticket booking</li>
+            <li>Hotel booking</li>
+            <li>Cab booking</li>
+            <li>Guide tour</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h4 class="text-lg font-medium text-n-grey">Key Features:</h4>
+          <p class="text-n-grey">Ideal for families and homeowners</p>
+          <p class="text-n-grey">Maximum benefits</p>
+        </div>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800">Get Started</button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="bg-n-algae text-n-secondary rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
+        <h2 class="text-4xl font-bold">$6500 <span class="text-lg font-normal">/Month</span></h2>
+        <h3 class="text-xl font-semibold mt-4">Standard Plan</h3>
+        <p class="mt-2">Quality and trust in every service..</p>
+        <hr class="my-4 border-n-secondary">
+        <div>
+          <h4 class="text-lg font-medium">Package Included:</h4>
+          <ul class="list-disc list-inside mt-2">
+            <li>Ticket booking</li>
+            <li>Hotel booking</li>
+            <li>Cab booking</li>
+            <li>Guide tour</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h4 class="text-lg font-medium">Key Features:</h4>
+          <p>Ideal for families and homeowners</p>
+          <p>Maximum benefits</p>
+        </div>
+        <button class="bg-n-primary text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-100">Get Started</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
+        <h2 class="text-4xl font-bold text-n-primary">$3500 <span class="text-lg font-normal text-n-grey">/Month</span>
+        </h2>
+        <h3 class="text-xl font-semibold text-n-primary mt-4">Basic Plan</h3>
+        <p class="text-gray-500 mt-2">Quality and trust in every service..</p>
+        <hr class="my-4">
+        <div>
+          <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
+          <ul class="list-disc list-inside text-n-grey mt-2">
+            <li>Ticket booking</li>
+            <li>Hotel booking</li>
+            <li>Cab booking</li>
+            <li>Guide tour</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h4 class="text-lg font-medium text-n-grey">Key Features:</h4>
+          <p class="text-n-grey">Ideal for families and homeowners</p>
+          <p class="text-n-grey">Maximum benefits</p>
+        </div>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- How it works -->
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h4 class="uppercase text-sm font-semibold tracking-wide text-n-grey">How it works</h4>
+      <h2 class="text-3xl md:text-5xl font-bold text-n-primary">Our Vision and Values</h2>
+    </div>
+
+    <!-- Steps -->
+    <div class="space-y-16">
+      <!-- Step 1 -->
+      <div class="md:flex items-center gap-8">
+        <div class="md:w-1/2">
+          <img src="./haj.png" alt="Step 1 Image" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <div class="text-n-gold text-2xl font-semibold mb-2">01</div>
+          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Consultation and Assessment</h3>
+          <ul class="space-y-4">
+            <li>
+              <p class="font-semibold text-n-grey">Initial Meeting</p>
+              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our
+                clients through integrity, excellence, and a passion for making dreams come true..</p>
+            </li>
+            <li>
+              <p class="font-semibold text-n-grey">Assessment of Needs</p>
+              <p class="text-gray-600 text-sm text-n-grey">At Nusuk Travels, we believe in building lasting
+                relationships with our clients through integrity, excellence, and a passion for making dreams come
+                true..</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="md:flex items-center gap-8 flex-row-reverse">
+        <div class="md:w-1/2">
+          <img src="./haj.png" alt="Step 2 Image" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <div class="text-n-gold text-2xl font-semibold mb-2">02</div>
+          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Customized Plan Selection</h3>
+          <ul class="space-y-4">
+            <li>
+              <p class="font-semibold text-n-grey">Plan Options Presented</p>
+              <p class="text-n-grey text-sm text-n-grey">AAt Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+            </li>
+            <li>
+              <p class="font-semibold text-n-grey">Review and Decision</p>
+              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="md:flex items-center gap-8">
+        <div class="md:w-1/2">
+          <img src="./haj.png" alt="Step 3 Image" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <div class="text-blue-500 text-2xl font-semibold mb-2 text-n-gold">03</div>
+          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Enrollment and Coverage Activation</h3>
+          <ul class="space-y-4">
+            <li>
+              <p class="font-semibold text-n-grey">Application Process</p>
+              <p class="ttext-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+            </li>
+            <li>
+              <p class="font-semibold text-n-grey">Travel Activation</p>
+              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="mt-12 text-center">
+      <p class="text-n-grey text-sm mb-4">Our clients are at the heart of everything we do..</p>
+      <button class="bg-n-primary text-n-secondary px-6 py-3 rounded-lg text-sm hover:bg-gray-800">Get Started</button>
+    </div>
+  </div>
+
+
+  <!-- Testimonials Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Heading and Link -->
+    <div class="flex justify-between items-center mb-12">
+      <div>
+        <p class="text-n-primary text-sm font-medium uppercase">Testimonials</p>
+        <h2 class="text-n-primary text-4xl font-bold">Hear from Our Clients</h2>
+      </div>
+      <a href="#" class="text-n-primary font-medium text-sm hover:underline">See All Testimonials</a>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <img src="./haj.png" alt="Melba King" class="w-12 h-12 rounded-full border-2 border-n-secodary mr-4">
+          <div>
+            <h3 class="font-bold text-n-primary">John Doe, Consultant</h3>
+            <div class="flex text-n-gold">
+              <span>★★★★★</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-n-grey text-sm">“We would love to hear from you! Whether you have questions about our services or
+          need assistance planning your next trip, feel free to reach out.”</p>
+      </div>
+      <!-- Testimonial Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <img src="./haj.png" alt="Melba King" class="w-12 h-12 rounded-full border-2 border-n-secodary mr-4">
+          <div>
+            <h3 class="font-bold text-n-primary">John Doe, Consultant</h3>
+            <div class="flex text-n-gold">
+              <span>★★★★★</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-n-grey text-sm">“We would love to hear from you! Whether you have questions about our services or
+          need assistance planning your next trip, feel free to reach out.”</p>
+      </div>
+      <!-- Testimonial Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <img src="./haj.png" alt="Melba King" class="w-12 h-12 rounded-full border-2 border-n-secodary mr-4">
+          <div>
+            <h3 class="font-bold text-n-primary">John Doe, Consultant</h3>
+            <div class="flex text-n-gold">
+              <span>★★★★★</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-n-grey text-sm">“We would love to hear from you! Whether you have questions about our services or
+          need assistance planning your next trip, feel free to reach out.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-n-primary text-n-secondary py-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-6">
+      <!-- Logo & Info Section -->
+      <div class="space-y-4">
+        <div class="flex items-center space-x-2">
+          <h2 class="text-2xl font-bold">Nusuk</h2>
+        </div>
+        <p class="text-sm">Empowering Your Peace of Mind</p>
+        <p class="text-sm text-n-secondary">
+          We would love to hear from you! Whether you have questions about our services or need assistance planning your
+          next trip, feel free to reach out.
+        </p>
+        <p class="flex items-center space-x-2 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-n-secondary" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 10h1m0 4h1m9 0h1m0-4h1m-5 0h1m9 0h1m0 4h1m-1-4h1M6 10h1m-1 0h1" />
+          </svg>
+          <span>+123 456 7891</span>
+        </p>
+      </div>
+
+      <!-- Company Links -->
+      <div class="space-y-2">
+        <h3 class="font-semibold text-lg">Company</h3>
+        <ul class="text-sm space-y-1 text-n-secondary">
+          <li><a href="#" class="hover:text-text-n-secondary">Home</a></li>
+          <li><a href="#" class="hover:text-text-n-secondary">About Us</a></li>
+          <li><a href="#" class="hover:text-text-n-secondary">Services</a></li>
+          <li><a href="#" class="hover:text-text-n-secondary">Events</a></li>
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div class="space-y-2">
+        <h3 class="font-semibold text-lg">Help</h3>
+        <ul class="text-sm space-y-1 text-n-secondary">
+          <li><a href="#" class="hover:text-n-secondary">Customer Support</a></li>
+          <li><a href="#" class="hover:text-n-secondary">How It Works</a></li>
+          <li><a href="#" class="hover:text-n-secondary">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-n-secondary">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Work Hours -->
+      <div class="space-y-2">
+        <h3 class="font-semibold text-lg">Work Hours</h3>
+        <p class="flex items-center space-x-2 text-sm text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-n-secondary" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5h6m-6 4h6m0 4h2a2 2 0 110 4H8a2 2 0 010-4h2m6-8H8m6 4H8m0 4h2m0 4h4m-4-4h4m-4-4H8m4 4h4" />
+          </svg>
+          <span>9 AM - 5 PM, Monday - Saturday</span>
+        </p>
+        <p class="flex items-center space-x-2 text-sm text-n-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5 9.5l-5-5M9.5 12.5l-5-5" />
+          </svg>
+          <span>support@nusuk.com</span>
+        </p>
+        <p class="flex items-center space-x-2 text-sm text-n-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 20v-2m0 2a3 3 0 100-6m0 6v-6a3 3 0 100-6V2a3 3 0 100 6m6-3H4" />
+          </svg>
+          <span>123, Main Street, City, Country.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div
+      class="border-t border-n-primary pt-6 max-w-7xl mx-auto flex justify-between items-center text-sm text-n-grey-secondary">
+      <p>&copy; 2025 Nusuk</p>
+      <p>Designed by Saad</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
