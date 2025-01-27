@@ -65,12 +65,75 @@
       }
     }
   </style>
+  <style>
+    /* Hide scrollbar */
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel {
+      scrollbar-width: none;
+    }
+
+    /* Smooth scrolling for the carousel */
+    .carousel {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-n-light">
   <!-- Header Section -->
   <header class="w-full">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Top Header -->
+    <div class="bg-n-primary py-2 hidden md:flex">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Contact Info -->
+        <div class="flex items-center space-x-4 text-sm text-n-secondary">
+          <p>Email: contact@nusuk.com</p>
+          <p>Phone: +7 (700) 51 51 518</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-n-secondary hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495V14.708h-3.13v-3.62h3.13V8.414c0-3.1 1.894-4.785 4.657-4.785 1.325 0 2.464.099 2.794.143v3.24h-1.917c-1.503 0-1.794.714-1.794 1.762v2.309h3.588l-.467 3.62h-3.12V24h6.116c.73 0 1.325-.593 1.325-1.324V1.325C24 .593 23.406 0 22.675 0z" />
+            </svg>
+          </a>
+          <a href="#" class="text-n-secondary hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+              <path
+                d="M23.994 4.557a10.049 10.049 0 01-2.828.775 4.92 4.92 0 002.165-2.724 10.144 10.144 0 01-3.127 1.184 4.916 4.916 0 00-8.379 4.482 13.94 13.94 0 01-10.125-5.144 4.928 4.928 0 001.523 6.573 4.903 4.903 0 01-2.224-.616v.062a4.919 4.919 0 003.946 4.827 4.928 4.928 0 01-2.212.084 4.926 4.926 0 004.604 3.417A9.869 9.869 0 010 21.544a13.905 13.905 0 007.548 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.213-.005-.425-.015-.637A10.012 10.012 0 0024 4.557z" />
+            </svg>
+          </a>
+          <a href="#" class="text-n-secondary hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.058 2.007.248 2.465.418a4.92 4.92 0 011.717 1.11 4.92 4.92 0 011.11 1.717c.17.458.36 1.259.418 2.465.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.058 1.206-.248 2.007-.418 2.465a4.92 4.92 0 01-1.11 1.717 4.92 4.92 0 01-1.717 1.11c-.458.17-1.259.36-2.465.418-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.058-2.007-.248-2.465-.418a4.92 4.92 0 01-1.717-1.11 4.92 4.92 0 01-1.11-1.717c-.17-.458-.36-1.259-.418-2.465-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.058-1.206.248-2.007.418-2.465a4.92 4.92 0 011.11-1.717A4.92 4.92 0 015.685 2.58c.458-.17 1.259-.36 2.465-.418C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.192 0-3.568.012-4.824.07-.98.046-1.52.2-1.878.334-.476.184-.815.41-1.18.774-.364.364-.59.704-.774 1.18-.134.358-.288.898-.334 1.878-.058 1.256-.07 1.632-.07 4.824s.012 3.568.07 4.824c.046.98.2 1.52.334 1.878.184.476.41.815.774 1.18.364.364.704.59 1.18.774.358.134.898.288 1.878.334 1.256.058 1.632.07 4.824.07s3.568-.012 4.824-.07c.98-.046 1.52-.2 1.878-.334.476-.184.815-.41 1.18-.774.364-.364.59-.704.774-1.18.134-.358.288-.898.334-1.878.058-1.256.07-1.632.07-4.824s-.012-3.568-.07-4.824c-.046-.98-.2-1.52-.334-1.878-.184-.476-.41-.815-.774-1.18-.364-.364-.704-.59-1.18-.774-.358-.134-.898-.288-1.878-.334-1.256-.058-1.632-.07-4.824-.07zM12 5.838a6.162 6.162 0 110 12.324 6.162 6.162 0 010-12.324zm0 1.838a4.324 4.324 0 100 8.648 4.324 4.324 0 000-8.648zm6.406-.483a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+            </svg>
+
+
+
+
+
+          </a>
+          <a href="#" class="text-n-secondary hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+              <path
+                d="M20.52 3.48A11.92 11.92 0 0012 0a11.92 11.92 0 00-8.52 3.48A11.92 11.92 0 000 12c0 2.11.55 4.18 1.59 6.01L0 24l5.99-1.59A11.87 11.87 0 0012 24a11.92 11.92 0 008.52-3.48A11.92 11.92 0 0024 12c0-3.22-1.25-6.24-3.48-8.52zM12 22c-1.9 0-3.74-.49-5.37-1.42l-.38-.21-3.5.93.93-3.5-.21-.37A9.94 9.94 0 012 12 9.98 9.98 0 012.93 6.37 10.02 10.02 0 016.37 2.93 9.98 9.98 0 0112 2c2.68 0 5.2 1.04 7.07 2.93A9.98 9.98 0 0122 12c0 2.68-1.04 5.2-2.93 7.07A9.98 9.98 0 0112 22zm5.71-7.36c-.29-.14-1.7-.84-1.96-.93-.26-.09-.45-.14-.64.14-.19.29-.73.93-.9 1.12-.17.19-.33.21-.62.07a8.25 8.25 0 01-2.44-1.5 9.18 9.18 0 01-1.69-2.1c-.18-.31 0-.48.14-.62.14-.14.33-.37.5-.56.16-.19.22-.33.33-.53.11-.2.06-.39-.02-.53-.08-.14-.64-1.54-.88-2.12-.23-.56-.47-.49-.65-.5h-.55c-.19 0-.5.07-.76.37-.26.29-1 .97-1 .97s-.26 1.58.62 3.1c.89 1.53 3.03 3.25 3.03 3.25s2.71 1.78 4.44 2.01c.58.09 1.15.08 1.59.05.48-.03 1.45-.6 1.65-1.18.2-.59.2-1.1.14-1.18-.07-.08-.26-.15-.55-.29z" />
+            </svg>
+          </a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="container mx-auto  px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center space-x-2">
         <span class="text-n-primary text-xl font-semibold">Nusuk</span>
@@ -99,18 +162,116 @@
         </div>
       </div>
     </div>
+
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-start bg-gray-50 px-4 py-2">
-      <a href="#" class="text-mecca-ivory font-medium mb-2">Home</a>
-      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">About Us</a>
-      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Services</a>
-      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Hajj & Umrah</a>
-      <a href="#" class="text-mecca-ivory hover:text-black transition mb-2">Packages</a>
-      <button class="bg-black border-solid border text-mecca-ivory px-4 py-2 rounded-full hover:bg-gray-800 transition">
-        Contact Us
+    <div id="mobile-menu"
+      class="fixed inset-0 z-50 bg-n-secondary text-white hidden flex flex-col items-center justify-center space-y-6">
+      <!-- Close Button -->
+      <button id="menu-close" class="absolute top-6 right-6 text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
+
+      <!-- Menu Items -->
+      <nav class="flex flex-col items-center space-y-4">
+        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+          Home
+        </a>
+        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+          About Us
+        </a>
+        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+          Services
+        </a>
+        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+          Hajj & Umrah
+        </a>
+        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+          Packages
+        </a>
+        <button class="bg-n-primary text-n-secondary px-6 py-3 rounded-full hover:bg-gray-800 transition">
+          Contact Us
+        </button>
+      </nav>
     </div>
+
   </header>
+
+
+
+
+  <!-- Hero Section with Carousel -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <div class="carousel relative w-full h-full overflow-x-auto flex snap-x snap-mandatory">
+      <!-- Slide 1 -->
+      <div class="relative w-full h-full flex-shrink-0 snap-center">
+        <img src="./haj.jpg" alt="Trucks" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
+          <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Hajj and Umrah services</h1>
+            <p class="mb-6 sm:mb-8 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+            </p>
+            <button
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Learn
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="relative w-full h-full flex-shrink-0 snap-center">
+        <img src="./jobs.webp" alt="Logistics" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
+          <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Manpower recruitment services</h1>
+            <p class="mb-6 sm:mb-8 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+            </p>
+            <button
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Explore
+              More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="relative w-full h-full flex-shrink-0 snap-center">
+        <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Transport Solutions"
+          class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
+          <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Oil and Gas recruitment</h1>
+            <p class="mb-6 sm:mb-8 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+            </p>
+            <button
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Learn
+              More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.carousel > div');
+    let currentIndex = 0;
+
+    function autoScroll() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      carousel.scrollTo({
+        left: slides[currentIndex].offsetLeft,
+        behavior: 'smooth',
+      });
+    }
+
+    // Auto-scroll every 5 seconds
+    setInterval(autoScroll, 5000);
+  </script>
 
   <!-- Hero Section -->
   <div class="container mx-auto py-32 px-6">
@@ -135,8 +296,8 @@
         </p>
         <div class="flex items-center space-x-4 mb-6">
           <button
-            class="px-6 py-3 bg-n-primary text-n-secondary rounded-lg hover:bg-gray-800 transition font-semibold">Get a
-            Quote</button>
+            class="px-6 py-3 bg-n-primary text-n-secondary rounded-lg hover:bg-gray-800 transition font-semibold">Contact
+            Us</button>
           <div class="flex items-center text-n-primary">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-6 h-6 mr-2">
@@ -222,17 +383,17 @@
     </div>
 
     <!-- Logos Section -->
-    <div class="mt-12 flex flex-wrap justify-center gap-8 items-center border-t border-gray-200 pt-8">
+    <!-- div class="mt-12 flex flex-wrap justify-center gap-8 items-center border-t border-gray-200 pt-8">
       <img src="./haj.png" alt="Logo 1" class="h-12">
       <img src="./tour.png" alt="Logo 2" class="h-12">
       <img src="./tour.webp" alt="Logo 3" class="h-12">
       <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Logo 4" class="h-12">
       <img src="./jobs.webp" alt="Logo 5" class="h-12">
-    </div>
+    </div> -->
   </section>
 
   <!-- Services Section -->
-  <section class="max-w-6xl mx-auto px-4 pb-32">
+  <section class="max-w-7xl mx-auto px-4 pb-32">
     <!-- Section Header -->
     <div class="mb-8 flex justify-between items-center">
       <div>
@@ -243,7 +404,37 @@
     </div>
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Visa Processing</h4>
+          <p class="text-n-grey mt-2">Smooth and reliable visa approvals. Smooth and reliable visa approvals. Smooth and
+            reliable visa approvals. Smooth and reliable visa approvals.</p>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
+        <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m2 0h-2m-1 0V9a1 1 0 011-1h1a1 1 0 011 1v3z" />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-semibold text-n-primary">Recruitment Assistance</h4>
+          <p class="text-n-grey mt-2">Connecting businesses with top talent. Connecting businesses with top talent.
+            Connecting businesses with top talent. Connecting businesses with top talent.</p>
+        </div>
+      </div>
+
       <!-- Card 1 -->
       <div class="flex items-start bg-n-pale-green p-6 rounded-lg">
         <div class="w-12 h-12 flex items-center justify-center bg-n-primary text-white rounded">
@@ -309,8 +500,8 @@
 
   <!-- Choose us -->
   <div class="bg-n-primary">
-    <div class="max-w-6xl mx-auto p-8 ">
-      <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-8">
+    <div class="max-w-7xl mx-auto p-8 ">
+      <div class="mx-auto flex flex-col lg:flex-row items-center gap-8">
         <!-- Left Section -->
         <div class="text-n-secondary">
           <h3 class="text-sm uppercase tracking-wide mb-4">Why Choose Us</h3>
@@ -506,11 +697,13 @@
           <ul class="space-y-4">
             <li>
               <p class="font-semibold text-n-grey">Plan Options Presented</p>
-              <p class="text-n-grey text-sm text-n-grey">AAt Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="text-n-grey text-sm text-n-grey">AAt Nusuk Travels, we believe in building lasting relationships
+                with our clients through integrity, excellence, and a passion for making dreams come true..</p>
             </li>
             <li>
               <p class="font-semibold text-n-grey">Review and Decision</p>
-              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our
+                clients through integrity, excellence, and a passion for making dreams come true..</p>
             </li>
           </ul>
         </div>
@@ -527,11 +720,13 @@
           <ul class="space-y-4">
             <li>
               <p class="font-semibold text-n-grey">Application Process</p>
-              <p class="ttext-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="ttext-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our
+                clients through integrity, excellence, and a passion for making dreams come true..</p>
             </li>
             <li>
               <p class="font-semibold text-n-grey">Travel Activation</p>
-              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="text-n-grey text-sm">At Nusuk Travels, we believe in building lasting relationships with our
+                clients through integrity, excellence, and a passion for making dreams come true..</p>
             </li>
           </ul>
         </div>
@@ -686,10 +881,15 @@
 
   <script>
     const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
 
     menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.remove('hidden');
+    });
+
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
     });
   </script>
 </body>
