@@ -26,6 +26,10 @@
         background-color: #F2EFE7 !important;
       }
 
+      .hover\:bg-n-secondary:hover {
+        background-color: #3B6790 !important;
+      }
+
       .bg-n-algae {
         background-color: #4C7B8B !important;
       }
@@ -56,6 +60,10 @@
 
       .text-n-secondary {
         color: #FFFFF0 !important;
+      }
+
+      .hover\:text-n-secondary:hover {
+        color: #FFD700 !important;
       }
 
       .text-n-grey {
@@ -132,36 +140,54 @@
     </div>
 
     <!-- Main Header -->
-    <div class="container mx-auto  px-4 py-4 flex justify-between items-center">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="./logo-transparent-2.png" alt="Nusuk Logo" class="hidden md:block h-10 w-auto">
-        <img src="./logo-m-transparent-2.png" alt="Nusuk Mobile Logo" class="md:hidden h-10 w-auto">
-      </div>
-      <!-- Navigation and Button -->
-      <div class="flex items-center space-x-6">
-        <nav class="hidden md:flex space-x-6">
-          <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
-          <a href="#" class="text-n-primary hover:text-n-gold transition">About Us</a>
-          <a href="#" class="text-n-primary hover:text-n-gold transition">Services</a>
-          <a href="#" class="text-n-primary hover:text-n-gold transition">Hajj & Umrah</a>
-          <a href="#" class="text-n-primary hover:text-n-gold transition">Packages</a>
-        </nav>
-        <button
-          class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
-          Contact Us
-        </button>
-        <!-- Hamburger Icon -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-500 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <!-- Logo -->
+  <div class="flex items-center space-x-2">
+    <img src="./logo-transparent-2.png" alt="Nusuk Logo" class="hidden md:block h-10 w-auto">
+    <img src="./logo-m-transparent-2.png" alt="Nusuk Mobile Logo" class="md:hidden h-10 w-auto">
+  </div>
+  <!-- Navigation and Button -->
+  <div class="flex items-center space-x-6">
+    <nav class="hidden md:flex space-x-6">
+      <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
+      <a href="#" class="text-n-primary hover:text-n-gold transition">About Us</a>
+      <div class="relative group">
+        <a href="#" class="text-n-primary hover:text-n-gold transition">Services</a>
+        <!-- Submenu -->
+        <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hiring Services</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Visa Processing</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Documentation</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Ticketing</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Medical</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Business Setup</a>
         </div>
       </div>
+      <div class="relative group">
+        <a href="#" class="text-n-primary hover:text-n-gold transition">Hajj & Umrah</a>
+        <!-- Submenu -->
+        <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hajj</a>
+          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Umrah</a>
+        </div>
+      </div>
+      <a href="#" class="text-n-primary hover:text-n-gold transition">Packages</a>
+    </nav>
+    <button class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
+      Contact Us
+    </button>
+    <!-- Hamburger Icon -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
+  </div>
+</div>
+
+
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
