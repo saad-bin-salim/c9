@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +41,7 @@
       }
 
       .hover\:text-n-gold:hover {
-        color: #FFD700 !important;
+        color: #4C7B8B !important;
       }
 
       .border-n-primary {
@@ -150,28 +148,38 @@
   <div class="flex items-center space-x-6">
     <nav class="hidden md:flex space-x-6">
       <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
-      <a href="#" class="text-n-primary hover:text-n-gold transition">About Us</a>
+      <a href="#aboutus" class="text-n-primary hover:text-n-gold transition">About Us</a>
       <div class="relative group">
-        <a href="#" class="text-n-primary hover:text-n-gold transition">Services</a>
+        <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
+          Services 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
+            <path d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
         <!-- Submenu -->
         <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hiring Services</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Visa Processing</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Documentation</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Ticketing</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Medical</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Business Setup</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hiring Services</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Visa Processing</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Documentation</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Ticketing</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Medical</a>
+          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Business Setup</a>
         </div>
       </div>
       <div class="relative group">
-        <a href="#" class="text-n-primary hover:text-n-gold transition">Hajj & Umrah</a>
+        <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
+          Hajj & Umrah
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
+            <path d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
         <!-- Submenu -->
         <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hajj</a>
-          <a href="#" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Umrah</a>
+          <a href="#haj" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hajj</a>
+          <a href="#haj" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Umrah</a>
         </div>
       </div>
-      <a href="#" class="text-n-primary hover:text-n-gold transition">Packages</a>
+      <a href="#pricing" class="text-n-primary hover:text-n-gold transition">Packages</a>
     </nav>
     <button class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
       Contact Us
@@ -186,6 +194,7 @@
     </div>
   </div>
 </div>
+
 
 
 
@@ -233,13 +242,10 @@
     <div class="carousel relative w-full h-full overflow-x-auto flex snap-x snap-mandatory">
       <!-- Slide 1 -->
       <div class="relative w-full h-full flex-shrink-0 snap-center">
-        <img src="./haj.jpg" alt="Trucks" class="absolute inset-0 w-full h-full object-cover">
+        <img src="./hajjj.png" alt="Trucks" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
-            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Hajj and Umrah services</h1>
-            <!-- <p class="mb-6 sm:mb-8 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
-            </p> -->
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Hajj and Umrah Services</h1>
             <button
               class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
               Us</button>
@@ -249,13 +255,10 @@
 
       <!-- Slide 2 -->
       <div class="relative w-full h-full flex-shrink-0 snap-center">
-        <img src="./tour.png" alt="Logistics" class="absolute inset-0 w-full h-full object-cover">
+        <img src="./dubai.jpg" alt="Logistics" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Business Setup Services</h1>
-            <!-- <p class="mb-6 sm:mb-8 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
-            </p> -->
             <button
               class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
               Us</button>
@@ -265,13 +268,10 @@
 
       <!-- Slide 3 -->
       <div class="relative w-full h-full flex-shrink-0 snap-center">
-        <img src="./jobs.webp" alt="Logistics" class="absolute inset-0 w-full h-full object-cover">
+        <img src="./jobs.png" alt="Logistics" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
-            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Manpower recruitment services</h1>
-            <!-- <p class="mb-6 sm:mb-8 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
-            </p> -->
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Manpower Recruitment Services</h1>
             <button
               class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
               Us</button>
@@ -281,14 +281,10 @@
 
       <!-- Slide 4 -->
       <div class="relative w-full h-full flex-shrink-0 snap-center">
-        <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Transport Solutions"
-          class="absolute inset-0 w-full h-full object-cover">
+        <img src="./realestate.jpg" alt="Transport Solutions" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 flex items-center justify-start px-4 sm:px-0 max-w-[1200px] mx-auto">
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
-            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Oil and Gas recruitment</h1>
-            <!-- <p class="mb-6 sm:mb-8 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
-            </p> -->
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Real Estate Services</h1>
             <button
               class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
               Us</button>
@@ -296,6 +292,16 @@
         </div>
       </div>
     </div>
+
+    <!-- Navigation Arrows -->
+    <button id="prevSlide"
+      class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">
+      &#10094; <!-- Left Arrow -->
+    </button>
+    <button id="nextSlide"
+      class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-2 rounded-full">
+      &#10095; <!-- Right Arrow -->
+    </button>
   </section>
 
   <script>
@@ -303,8 +309,8 @@
     const slides = document.querySelectorAll('.carousel > div');
     let currentIndex = 0;
 
-    function autoScroll() {
-      currentIndex = (currentIndex + 1) % slides.length;
+    function moveToSlide(index) {
+      currentIndex = index < 0 ? slides.length - 1 : index % slides.length;
       carousel.scrollTo({
         left: slides[currentIndex].offsetLeft,
         behavior: 'smooth',
@@ -312,8 +318,37 @@
     }
 
     // Auto-scroll every 5 seconds
-    setInterval(autoScroll, 5000);
+    let autoScrollInterval = setInterval(() => moveToSlide(currentIndex + 1), 5000);
+
+    // Manual navigation
+    document.getElementById('prevSlide').addEventListener('click', () => {
+      moveToSlide(currentIndex - 1);
+      resetAutoScroll();
+    });
+
+    document.getElementById('nextSlide').addEventListener('click', () => {
+      moveToSlide(currentIndex + 1);
+      resetAutoScroll();
+    });
+
+    // Reset auto-scroll on manual click
+    function resetAutoScroll() {
+      clearInterval(autoScrollInterval);
+      autoScrollInterval = setInterval(() => moveToSlide(currentIndex + 1), 5000);
+    }
+
+    // Keyboard navigation support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        moveToSlide(currentIndex - 1);
+        resetAutoScroll();
+      } else if (e.key === 'ArrowRight') {
+        moveToSlide(currentIndex + 1);
+        resetAutoScroll();
+      }
+    });
   </script>
+
 
   <!-- Hero Section -->
   <div class="container mx-auto py-32 px-6">
@@ -329,12 +364,15 @@
           <span>Begin your sacred journey with Nusuk VIP.</span>
         </div>
         <h1 class="text-4xl lg:text-5xl font-bold text-n-primary mb-4">
-          Religious Solutions <br> by Nusuk VIP
+          One-Stop Solution <br> by Nusuk VIP
         </h1>
         <p class="text-n-grey mb-6">
-          At Nusuk VIP, we pride ourselves on offering a wide range of services tailored to your needs. From
-          seamless visa processing to reliable recruitment solutions, we ensure excellence in every step of your
-          journey.
+          At Nusuk VIP, we take pride in being your one-stop solution for a wide range of services:
+          Religious Tours – Seamless Hajj & Umrah packages with exceptional planning and support.
+          Workforce Management – Overseas recruitment solutions for businesses across UAE, KSA, and beyond.
+          Visa & Documentation – Visa stamping, document attestation, and embassy approvals made easy.
+          Business Setup & Expansion – From Dubai business formation to Golden Visa facilitation.
+          Property Services – Buy, sell, or rent properties in India & Dubai with expert guidance.
         </p>
         <div class="flex items-center space-x-4 mb-6">
           <button
@@ -354,7 +392,7 @@
       <!-- Right Section -->
       <div>
         <div class="relative bg-blue-50 rounded-lg shadow-md overflow-hidden">
-          <img src="./haj.png" alt="Insurance Image" class="w-full h-full object-cover">
+          <img src="./mosque.jpg" alt="Insurance Image" class="w-full h-full object-cover">
         </div>
       </div>
     </div>
@@ -389,17 +427,18 @@
   </section>
 
   <!-- About Us Section -->
-  <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-16 border-b-2 border-n-primary">
+  <section id="aboutus" class="max-w-7xl mx-auto px-4 lg:px-8 pt-32 pb-16 border-b-2 border-n-primary">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Images Section -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Vertical Image (Left Column) -->
-        <img src="./haj.webp" alt="Main Image" class="rounded-lg shadow-md w-full h-[500px] object-cover lg:col-span-1">
+        <img src="./kabah-tower.jpg" alt="Main Image"
+          class="rounded-lg shadow-md w-full h-[500px] object-cover lg:col-span-1">
 
         <!-- Smaller Images (Right Column) -->
         <div class="grid grid-cols-1 gap-6">
           <img src="./tour.webp" alt="Supporting Image 1" class="rounded-lg shadow-md w-full h-[240px] object-cover">
-          <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Supporting Image 2"
+          <img src="./realestate.jpg" alt="Supporting Image 2"
             class="rounded-lg shadow-md w-full h-[240px] object-cover">
         </div>
       </div>
@@ -408,185 +447,199 @@
       <div>
         <h3 class="text-n-grey text-sm uppercase tracking-wide mb-2">About Us</h3>
         <h1 class="text-3xl lg:text-4xl font-bold text-n-primary mb-4">
-          Nusuk VIP 
+          Nusuk VIP
         </h1>
         <h4 class="text-lg font-medium text-n-gold mb-4">Our Vision</h4>
         <p class="text-n-primary mb-6 leading-relaxed">
-          Nusuk VIP has been delivering excellence in travel and recruitment services for over a decade. With a
-          focus on innovation and customer satisfaction, our mission is to make every journey seamless and memorable."
-
-          "Whether you’re embarking on a spiritual journey, seeking career opportunities abroad, or planning your next
-          big adventure, Nusuk VIP is here to guide you every step of the way..
+          Nusuk VIP is a trusted name in religious tourism, workforce solutions, and business services with a global
+          presence spanning UAE, KSA, Kuwait, Qatar, Bahrain, Egypt, India, Nepal, and Bangladesh. With over two decades
+          of industry expertise, we specialize in providing comprehensive workforce solutions, visa stamping, document
+          attestation, property services, and business setup assistance. Our dedicated team ensures seamless processing,
+          expert guidance, and efficient service delivery. At Nusuk VIP, we are driven by innovation, reliability, and
+          an unwavering commitment to client satisfaction. Whether it’s your spiritual journey, global employment needs,
+          or corporate expansion, we stand by you every step of the way.
         </p>
         <a href="#" class="bg-n-primary text-n-secondary py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition">
           Contact Us
         </a>
       </div>
     </div>
-
-    <!-- Logos Section -->
-    <!-- div class="mt-12 flex flex-wrap justify-center gap-8 items-center border-t border-gray-200 pt-8">
-      <img src="./haj.png" alt="Logo 1" class="h-12">
-      <img src="./tour.png" alt="Logo 2" class="h-12">
-      <img src="./tour.webp" alt="Logo 3" class="h-12">
-      <img src="./Oil-and-Gas-saudi-arabia.jpg" alt="Logo 4" class="h-12">
-      <img src="./jobs.webp" alt="Logo 5" class="h-12">
-    </div> -->
   </section>
 
   <!-- Services Section -->
 
-  <div class="container max-w-7xl mx-auto px-6 pt-16 pb-32">
+  <div id="service" class="container max-w-7xl mx-auto px-6 pt-16 pb-32">
     <h1 class="text-center text-3xl font-bold text-n-primary mb-4">Our Professional Services</h1>
     <p class="text-center text-n-primary mb-8">We provide a wide range of services to meet your needs.</p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Hiring Services -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Hiring Services</h2>
-                <p class="text-n-grey text-sm">We help you find the right candidates for your business with our expert hiring solutions.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-12/19/full/1703006363-6155.jpg?im=FeatureCrop,size=(826,465)" alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-        
-        <!-- Visa Processing -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Visa Processing</h2>
-                <p class="text-n-grey text-sm">Hassle-free visa processing services to assist in international travel and business needs.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://cdn-imgix.headout.com/mircobrands-content/image/1665b43d70b1cd42474d48558387eb8f-david-rodrigo-Fr6zexbmjmc-unsplash.jpg" alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-        
-        <!-- Documentation -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Documentation</h2>
-                <p class="text-n-grey text-sm">Expert assistance in handling all types of official documentation efficiently.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpQZU_bxTxFhH3rzZQOsPjjJ8FLRNjaogsA&s" alt="Documentation" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-        
-        <!-- Ticketing -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Ticketing</h2>
-                <p class="text-n-grey text-sm">Seamless ticket booking services for travel, events, and business trips.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://www.nerdwallet.com/tachyon/2023/07/GettyImages-513884053.jpg" alt="Ticketing" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-        
-        <!-- Medical -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Medical</h2>
-                <p class="text-n-grey text-sm">Medical checkups, consultations, and assistance for travelers and employees.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://media.istockphoto.com/id/1319031310/photo/doctor-writing-a-medical-prescription.jpg?s=612x612&w=0&k=20&c=DWZGM8lBb5Bun7cbxhKT1ruVxRC_itvFzA9jxgoA0N8=" alt="Medical" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-        
-        <!-- Business Setup -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
-            <div class="w-2/3">
-                <h2 class="text-xl font-semibold text-n-primary">Business Setup</h2>
-                <p class="text-n-grey text-sm">Comprehensive business setup services to get your company started smoothly.</p>
-            </div>
-            <div class="w-1/3">
-                <img src="https://cdn-imgix.headout.com/mircobrands-content/image/1665b43d70b1cd42474d48558387eb8f-david-rodrigo-Fr6zexbmjmc-unsplash.jpg" alt="Business Setup" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
-            </div>
-        </div>
-    </div>
-  </div>
 
-  <!-- Choose us -->
-  <div class="bg-n-primary">
-    <div class="max-w-7xl mx-auto p-8 ">
-      <div class="mx-auto flex flex-col lg:flex-row items-center gap-8">
-        <!-- Left Section -->
-        <div class="text-n-secondary">
-          <h3 class="text-sm uppercase tracking-wide mb-4">Why Choose Us</h3>
-          <h1 class="text-4xl font-bold mb-8">Nusuk VIP - Your Trusted Travel Partner.</h1>
-          <div class="space-y-6">
-            <!-- Experience and Expertise -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15.75 9A3.75 3.75 0 1112 5.25 3.75 3.75 0 0115.75 9zM12 12a7.5 7.5 0 00-7.5 7.5c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75A7.5 7.5 0 0012 12z" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold">Visa Processing</h4>
-                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
-                  Smooth and reliable visa approvals.</p>
-              </div>
-            </div>
-            <!-- Experience and Expertise -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16.5 2.25h-9a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25z" />
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 8.25a3 3 0 110 6 3 3 0 010-6zm0 0h.008v.008H12V8.25zM9 15.75h6" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold">Visa Processing</h4>
-                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
-                  Smooth and reliable visa approvals.</p>
-              </div>
-            </div>
-            <!-- Experience and Expertise -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-black rounded-md flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19.5 9.75V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V4.5A2.25 2.25 0 016.75 2.25h6.75L19.5 9.75z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5h6M9 16.5h3" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-semibold">Visa Processing</h4>
-                <p class="text-sm text-gray-300">Smooth and reliable visa approvals. Smooth and reliable visa approvals.
-                  Smooth and reliable visa approvals.</p>
-              </div>
-            </div>
-          </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Hiring Services -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Hiring Services</h2>
+          <p class="text-n-grey text-sm">We help you find the right candidates for your business with our expert hiring
+            solutions.</p>
         </div>
-        <!-- Right Section -->
-        <div class="relative">
-          <img src="./haj.png" alt="Insurance Image" class="rounded-lg shadow-lg">
-          <div class="absolute top-8 right-8 bg-n-light rounded-lg px-4 py-2 shadow-md flex items-center">
-            <span class="text-n-primary text-2xl font-bold">90%</span>
-            <div class="ml-4">
-              <p class="text-xs text-n-grey">Customer Satisfaction</p>
-              <div class="flex items-center">
-                <span class="text-n-gold">★ ★ ★ ★ ★</span>
-              </div>
-            </div>
-          </div>
+        <div class="w-1/3">
+          <img
+            src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-12/19/full/1703006363-6155.jpg?im=FeatureCrop,size=(826,465)"
+            alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Visa Processing -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Visa Processing</h2>
+          <p class="text-n-grey text-sm">Hassle-free visa processing services to assist in international travel and
+            business needs.</p>
+        </div>
+        <div class="w-1/3">
+          <img
+            src="https://cdn-imgix.headout.com/mircobrands-content/image/1665b43d70b1cd42474d48558387eb8f-david-rodrigo-Fr6zexbmjmc-unsplash.jpg"
+            alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Documentation -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Documentation</h2>
+          <p class="text-n-grey text-sm">Expert assistance in handling all types of official documentation efficiently.
+          </p>
+        </div>
+        <div class="w-1/3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpQZU_bxTxFhH3rzZQOsPjjJ8FLRNjaogsA&s"
+            alt="Documentation"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Ticketing -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Ticketing</h2>
+          <p class="text-n-grey text-sm">Seamless ticket booking services for travel, events, and business trips.</p>
+        </div>
+        <div class="w-1/3">
+          <img src="https://www.nerdwallet.com/tachyon/2023/07/GettyImages-513884053.jpg" alt="Ticketing"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Medical</h2>
+          <p class="text-n-grey text-sm">Medical checkups, consultations, and assistance for travelers and employees.
+          </p>
+        </div>
+        <div class="w-1/3">
+          <img
+            src="https://media.istockphoto.com/id/1319031310/photo/doctor-writing-a-medical-prescription.jpg?s=612x612&w=0&k=20&c=DWZGM8lBb5Bun7cbxhKT1ruVxRC_itvFzA9jxgoA0N8="
+            alt="Medical"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- Business Setup -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex items-center hover:shadow-lg transition-shadow duration-300">
+        <div class="w-2/3">
+          <h2 class="text-xl font-semibold text-n-primary">Business Setup</h2>
+          <p class="text-n-grey text-sm">Comprehensive business setup services to get your company started smoothly.</p>
+        </div>
+        <div class="w-1/3">
+          <img
+            src="https://cdn-imgix.headout.com/mircobrands-content/image/1665b43d70b1cd42474d48558387eb8f-david-rodrigo-Fr6zexbmjmc-unsplash.jpg"
+            alt="Business Setup"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Choose us -->
+<div class="bg-n-primary py-12">
+  <div class="max-w-7xl mx-auto p-8 grid grid-cols-4 gap-8 items-center">
+    <!-- Left Section -->
+    <div class="col-span-2 text-n-secondary space-y-6">
+      <h3 class="text-sm uppercase tracking-wide">Why Choose Us</h3>
+      <h1 class="text-4xl font-bold">Nusuk VIP - Your Trusted Travel Partner.</h1>
+
+      <div class="space-y-6">
+        <!-- Feature 1 -->
+        <div class="flex items-center gap-4">
+          <div class="w-[30px] h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 9A3.75 3.75 0 1112 5.25 3.75 3.75 0 0115.75 9zM12 12a7.5 7.5 0 00-7.5 7.5c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75A7.5 7.5 0 0012 12z" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">Visa Processing</h4>
+            <p class="text-sm text-gray-300 leading-tight">From religious tours to international recruitment, visa processing, and
+              business setup, we offer a comprehensive suite of services.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-center gap-4">
+          <div class="w-[30px] h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.5 2.25h-9a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 8.25a3 3 0 110 6 3 3 0 010-6zm0 0h.008v.008H12V8.25zM9 15.75h6" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">Expert Assistance</h4>
+            <p class="text-sm text-gray-300 leading-tight">Our long-standing relationships with ministries, embassies, and corporate
+              entities make us a preferred service provider.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex items-center gap-4">
+          <div class="w-[30px] h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 9.75V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V4.5A2.25 2.25 0 016.75 2.25h6.75L19.5 9.75z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5h6M9 16.5h3" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">Customer Satisfaction</h4>
+            <p class="text-sm text-gray-300 leading-tight">We prioritize customer satisfaction and provide personalized support and
+              guidance at every step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section (Image) -->
+    <div class="col-span-2 relative w-full h-full">
+      <img src="./inner.png" alt="Insurance Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+      <div class="absolute top-8 right-8 bg-n-light rounded-lg px-4 py-2 shadow-md flex items-center">
+        <span class="text-n-primary text-2xl font-bold">90%</span>
+        <div class="ml-4">
+          <p class="text-xs text-n-grey">Customer Satisfaction</p>
+          <div class="flex items-center">
+            <span class="text-n-gold">★ ★ ★ ★ ★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <!-- Pricing Section -->
-  <section class="container mx-auto  px-4 pt-32 pb-16 border-b-2 border-n-primary">
+  <section id="pricing" class="container mx-auto  px-4 pt-32 pb-16 border-b-2 border-n-primary">
     <div class="text-center mb-10">
       <h4 class="text-lg font-medium uppercase text-n-grey-secondary tracking-wide">Pricing Plans</h4>
       <h1 class="text-3xl md:text-4xl font-bold text-n-primary">Nusuk VIP Plans</h1>
@@ -687,14 +740,13 @@
           <ul class="space-y-4">
             <li>
               <p class="font-semibold text-n-grey">Initial Meeting</p>
-              <p class="text-n-grey text-sm">At Nusuk VIP, we believe in building lasting relationships with our
-                clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="text-n-grey text-sm">Get in touch with our expert team to discuss your needs. Our specialists
+                guide you through the entire process, ensuring clarity and transparency.</p>
             </li>
             <li>
               <p class="font-semibold text-n-grey">Assessment of Needs</p>
-              <p class="text-gray-600 text-sm text-n-grey">At Nusuk VIP, we believe in building lasting
-                relationships with our clients through integrity, excellence, and a passion for making dreams come
-                true..</p>
+              <p class="text-gray-600 text-sm text-n-grey">We analyze your requirements and provide the best-suited
+                solutions tailored to your needs.</p>
             </li>
           </ul>
         </div>
@@ -707,17 +759,17 @@
         </div>
         <div class="md:w-1/2 mt-6 md:mt-0">
           <div class="text-n-gold text-2xl font-semibold mb-2">02</div>
-          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Customized Plan Selection</h3>
+          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Documentation & Processing</h3>
           <ul class="space-y-4">
             <li>
-              <p class="font-semibold text-n-grey">Plan Options Presented</p>
-              <p class="text-n-grey text-sm text-n-grey">AAt Nusuk VIP, we believe in building lasting relationships
-                with our clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="font-semibold text-n-grey">Collects and Verifies</p>
+              <p class="text-n-grey text-sm text-n-grey">Our team collects and verifies all necessary documents.
+                We assist with visa stamping, document attestation, and approvals from relevant authorities.</p>
             </li>
             <li>
-              <p class="font-semibold text-n-grey">Review and Decision</p>
-              <p class="text-n-grey text-sm">At Nusuk VIP, we believe in building lasting relationships with our
-                clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="font-semibold text-n-grey">Compliance and Review</p>
+              <p class="text-n-grey text-sm">For workforce management, we handle screening, recruitment, and compliance
+                procedures.</p>
             </li>
           </ul>
         </div>
@@ -730,17 +782,17 @@
         </div>
         <div class="md:w-1/2 mt-6 md:mt-0">
           <div class="text-blue-500 text-2xl font-semibold mb-2 text-n-gold">03</div>
-          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Enrollment and Coverage Activation</h3>
+          <h3 class="text-xl md:text-2xl font-bold mb-4 text-n-primary">Execution & Coordination</h3>
           <ul class="space-y-4">
             <li>
-              <p class="font-semibold text-n-grey">Application Process</p>
-              <p class="ttext-n-grey text-sm">At Nusuk VIP, we believe in building lasting relationships with our
-                clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="font-semibold text-n-grey">Booking</p>
+              <p class="ttext-n-grey text-sm">For Hajj & Umrah: We arrange flights, accommodations, transportation, and
+                guided tours.</p>
             </li>
             <li>
-              <p class="font-semibold text-n-grey">Travel Activation</p>
-              <p class="text-n-grey text-sm">At Nusuk VIP, we believe in building lasting relationships with our
-                clients through integrity, excellence, and a passion for making dreams come true..</p>
+              <p class="font-semibold text-n-grey">Stay Connected</p>
+              <p class="text-n-grey text-sm">We stay connected throughout the process, providing real-time updates and
+                customer support..</p>
             </li>
           </ul>
         </div>
@@ -826,18 +878,7 @@
           We would love to hear from you! Whether you have questions about our services or need assistance planning your
           next trip, feel free to reach out.
         </p>
-        <p class="flex items-center space-x-2 text-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M3.75 4.5a2.25 2.25 0 012.25-2.25h3.375c1.024 0 1.93.687 2.182 1.682l.634 2.537c.21.84-.065 1.744-.632 2.31L8.91 10.34a14.85 14.85 0 006.752 6.752l1.55-1.55c.566-.567 1.47-.842 2.31-.632l2.537.634c.995.252 1.682 1.158 1.682 2.182v3.375a2.25 2.25 0 01-2.25 2.25h-1.5C10.73 21 3 13.27 3 5.25v-1.5z" />
-          </svg>
 
-
-
-
-          <span>+91-7999 999 409</span>
-        </p>
       </div>
 
       <!-- Company Links -->
@@ -886,6 +927,18 @@
 
           <span>nemat@nusuk.vip</span>
         </p>
+        <p class="flex items-center space-x-2 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 4.5a2.25 2.25 0 012.25-2.25h3.375c1.024 0 1.93.687 2.182 1.682l.634 2.537c.21.84-.065 1.744-.632 2.31L8.91 10.34a14.85 14.85 0 006.752 6.752l1.55-1.55c.566-.567 1.47-.842 2.31-.632l2.537.634c.995.252 1.682 1.158 1.682 2.182v3.375a2.25 2.25 0 01-2.25 2.25h-1.5C10.73 21 3 13.27 3 5.25v-1.5z" />
+          </svg>
+
+
+
+
+          <span>+91-7999 999 409</span>
+        </p>
         <p class="flex items-center space-x-2 text-sm text-n-secondary">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
             class="w-6 h-6">
@@ -896,7 +949,7 @@
           </svg>
 
 
-          <span>123, Main Street, City, Country.</span>
+          <span>New Delhi, India - 110025</span>
         </p>
       </div>
     </div>
