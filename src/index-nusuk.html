@@ -138,62 +138,74 @@
     </div>
 
     <!-- Main Header -->
-<div class="container mx-auto px-4 py-4 flex justify-between items-center">
-  <!-- Logo -->
-  <div class="flex items-center space-x-2">
-    <img src="./logo-transparent-2.webp" alt="Nusuk Logo" class="hidden md:block h-10 w-auto">
-    <img src="./logo-m-transparent-2.webp" alt="Nusuk Mobile Logo" class="md:hidden h-10 w-auto">
-  </div>
-  <!-- Navigation and Button -->
-  <div class="flex items-center space-x-6">
-    <nav class="hidden md:flex space-x-6">
-      <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
-      <a href="#aboutus" class="text-n-primary hover:text-n-gold transition">About Us</a>
-      <div class="relative group">
-        <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
-          Services 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </a>
-        <!-- Submenu -->
-        <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hiring Services</a>
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Visa Processing</a>
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Documentation</a>
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Ticketing</a>
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Medical</a>
-          <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Business Setup</a>
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./logo-transparent-2.webp" alt="Nusuk Logo" class="hidden md:block h-10 w-auto">
+        <img src="./logo-m-transparent-2.webp" alt="Nusuk Mobile Logo" class="md:hidden h-10 w-auto">
+      </div>
+      <!-- Navigation and Button -->
+      <div class="flex items-center space-x-6">
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-n-primary hover:text-n-gold font-medium">Home</a>
+          <a href="#aboutus" class="text-n-primary hover:text-n-gold transition">About Us</a>
+          <div class="relative group">
+            <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
+              Services
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
+                <path d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
+              <a href="#service"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hiring Services</a>
+              <a href="#service" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Visa
+                Processing</a>
+              <a href="#service"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Documentation</a>
+              <a href="#service"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Ticketing</a>
+              <a href="#service"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Medical</a>
+              <a href="#service"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Business Setup</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
+              Hajj & Umrah
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
+                <path d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
+              <a href="#pricing"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hajj</a>
+              <a href="#pricing"
+                class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Umrah</a>
+            </div>
+          </div>
+          <a href="#pricing" class="text-n-primary hover:text-n-gold transition">Packages</a>
+        </nav>
+        <button
+          class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
+          <a href="./index-nusuk-contact.html">Contact Us</a>
+        </button>
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="relative group">
-        <a href="#" class="text-n-primary hover:text-n-gold transition flex items-center">
-          Hajj & Umrah
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-1">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </a>
-        <!-- Submenu -->
-        <div class="absolute left-0 mt-2 w-48 bg-n-light shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-[1] overflow-hidden">
-          <a href="#pricing" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Hajj</a>
-          <a href="#pricing" class="block px-4 py-2 text-n-primary hover:bg-n-secondary hover:text-n-secondary">Umrah</a>
-        </div>
-      </div>
-      <a href="#pricing" class="text-n-primary hover:text-n-gold transition">Packages</a>
-    </nav>
-    <button class="hidden md:block bg-n-primary text-n-secondary px-6 py-2 rounded-full hover:bg-gray-800 transition">
-      Contact Us
-    </button>
-    <!-- Hamburger Icon -->
-    <div class="md:hidden">
-      <button id="menu-toggle" class="text-gray-500 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
     </div>
-  </div>
-</div>
 
 
 
@@ -214,20 +226,21 @@
         <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
           Home
         </a>
-        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+        <a href="#aboutus" class="text-xl font-semibold hover:text-n-gold transition">
           About Us
         </a>
-        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+        <a href="#service" class="text-xl font-semibold hover:text-n-gold transition">
           Services
         </a>
-        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+        <a href="#pricing" class="text-xl font-semibold hover:text-n-gold transition">
           Hajj & Umrah
         </a>
-        <a href="#" class="text-xl font-semibold hover:text-n-gold transition">
+        <a href="#pricing" class="text-xl font-semibold hover:text-n-gold transition">
           Packages
         </a>
         <button class="bg-n-primary text-n-secondary px-6 py-3 rounded-full hover:bg-gray-800 transition">
-          Contact Us
+          <a href="./index-nusuk-contact.html">Contact Us</a>
+
         </button>
       </nav>
     </div>
@@ -247,8 +260,8 @@
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Hajj and Umrah Services</h1>
             <button
-              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
-              Us</button>
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition"><a
+              href="./index-nusuk-contact.html">Contact Us</a></button>
           </div>
         </div>
       </div>
@@ -260,8 +273,8 @@
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Business Setup Services</h1>
             <button
-              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
-              Us</button>
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition"><a
+              href="./index-nusuk-contact.html">Contact Us</a></button>
           </div>
         </div>
       </div>
@@ -273,8 +286,8 @@
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Manpower Recruitment Services</h1>
             <button
-              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
-              Us</button>
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition"><a
+              href="./index-nusuk-contact.html">Contact Us</a></button>
           </div>
         </div>
       </div>
@@ -286,8 +299,8 @@
           <div class="max-w-lg text-left text-n-secondary bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg">
             <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6">Real Estate Services</h1>
             <button
-              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition">Contact
-              Us</button>
+              class="bg-n-primary text-n-secondary px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-700 transition"><a
+              href="./index-nusuk-contact.html">Contact Us</a></button>
           </div>
         </div>
       </div>
@@ -375,19 +388,20 @@
           Property Services – Buy, sell, or rent properties in India & Dubai with expert guidance.
         </p>
         <!-- Contact Button & Phone -->
-<div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-center sm:text-left">
-  <button class="px-6 py-3 bg-n-primary text-n-secondary rounded-lg hover:bg-gray-800 transition font-semibold">
-    Contact Us
-  </button>
-  <div class="flex items-center text-n-primary">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-      stroke="currentColor" class="w-6 h-6 mr-2">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3.75 3h16.5M4.5 6.75h15a.75.75 0 01.75.75v11.25a.75.75 0 01-.75.75H4.5a.75.75 0 01-.75-.75V7.5a.75.75 0 01.75-.75zm6 3.75h3" />
-    </svg>
-    <span class="text-lg font-medium">+91-7999 999 409</span>
-  </div>
-</div>
+        <div
+          class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 text-center sm:text-left">
+          <button class="px-6 py-3 bg-n-primary text-n-secondary rounded-lg hover:bg-gray-800 transition font-semibold">
+            <a href="./index-nusuk-contact.html">Contact Us</a>
+          </button>
+          <div class="flex items-center text-n-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 3h16.5M4.5 6.75h15a.75.75 0 01.75.75v11.25a.75.75 0 01-.75.75H4.5a.75.75 0 01-.75-.75V7.5a.75.75 0 01.75-.75zm6 3.75h3" />
+            </svg>
+            <span class="text-lg font-medium">+91-7999 999 409</span>
+          </div>
+        </div>
 
       </div>
 
@@ -461,7 +475,8 @@
           an unwavering commitment to client satisfaction. Whether it’s your spiritual journey, global employment needs,
           or corporate expansion, we stand by you every step of the way.
         </p>
-        <a href="#" class="bg-n-primary text-n-secondary py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition">
+        <a href="#" class="bg-n-primary text-n-secondary py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition"
+          href="./index-nusuk-contact.html">
           Contact Us
         </a>
       </div>
@@ -483,9 +498,8 @@
             solutions.</p>
         </div>
         <div class="w-1/3">
-          <img
-            src="./jobs.webp"
-            alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+          <img src="./jobs.webp" alt="Visa"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
 
@@ -497,9 +511,8 @@
             business needs.</p>
         </div>
         <div class="w-1/3">
-          <img
-            src="./visa.webp"
-            alt="Visa" class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
+          <img src="./visa.webp" alt="Visa"
+            class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
 
@@ -511,8 +524,7 @@
           </p>
         </div>
         <div class="w-1/3">
-          <img src="document.webp"
-            alt="Documentation"
+          <img src="document.webp" alt="Documentation"
             class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
@@ -537,9 +549,7 @@
           </p>
         </div>
         <div class="w-1/3">
-          <img
-            src="medical.webp"
-            alt="Medical"
+          <img src="medical.webp" alt="Medical"
             class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
@@ -551,9 +561,7 @@
           <p class="text-n-grey text-sm">Comprehensive business setup services to get your company started smoothly.</p>
         </div>
         <div class="w-1/3">
-          <img
-            src="business.webp"
-            alt="Business Setup"
+          <img src="business.webp" alt="Business Setup"
             class="w-full h-[70px] rounded-lg transform hover:scale-105 transition-transform duration-300">
         </div>
       </div>
@@ -561,84 +569,87 @@
   </div>
 
   <!-- Choose Us -->
-<div class="bg-n-primary py-12">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Left Section -->
-    <div class="text-n-secondary space-y-6">
-      <h3 class="text-sm uppercase tracking-wide">Why Choose Us</h3>
-      <h1 class="text-3xl sm:text-4xl font-bold">Nusuk VIP - Your Trusted Travel Partner.</h1>
+  <div class="bg-n-primary py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      <div class="space-y-6">
-        <!-- Feature 1 -->
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 9A3.75 3.75 0 1112 5.25 3.75 3.75 0 0115.75 9zM12 12a7.5 7.5 0 00-7.5 7.5c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75A7.5 7.5 0 0012 12z" />
-            </svg>
-          </div>
-          <div>
-            <h4 class="text-xl font-semibold">Visa Processing</h4>
-            <p class="text-sm text-gray-300 leading-tight">From religious tours to international recruitment, visa processing, and
-              business setup, we offer a comprehensive suite of services.</p>
-          </div>
-        </div>
+      <!-- Left Section -->
+      <div class="text-n-secondary space-y-6">
+        <h3 class="text-sm uppercase tracking-wide">Why Choose Us</h3>
+        <h1 class="text-3xl sm:text-4xl font-bold">Nusuk VIP - Your Trusted Travel Partner.</h1>
 
-        <!-- Feature 2 -->
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M16.5 2.25h-9a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25z" />
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 8.25a3 3 0 110 6 3 3 0 010-6zm0 0h.008v.008H12V8.25zM9 15.75h6" />
-            </svg>
+        <div class="space-y-6">
+          <!-- Feature 1 -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 9A3.75 3.75 0 1112 5.25 3.75 3.75 0 0115.75 9zM12 12a7.5 7.5 0 00-7.5 7.5c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75A7.5 7.5 0 0012 12z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Visa Processing</h4>
+              <p class="text-sm text-gray-300 leading-tight">From religious tours to international recruitment, visa
+                processing, and
+                business setup, we offer a comprehensive suite of services.</p>
+            </div>
           </div>
-          <div>
-            <h4 class="text-xl font-semibold">Expert Assistance</h4>
-            <p class="text-sm text-gray-300 leading-tight">Our long-standing relationships with ministries, embassies, and corporate
-              entities make us a preferred service provider.</p>
-          </div>
-        </div>
 
-        <!-- Feature 3 -->
-        <div class="flex items-start gap-4">
-          <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19.5 9.75V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V4.5A2.25 2.25 0 016.75 2.25h6.75L19.5 9.75z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5h6M9 16.5h3" />
-            </svg>
+          <!-- Feature 2 -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16.5 2.25h-9a2.25 2.25 0 00-2.25 2.25v15a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 8.25a3 3 0 110 6 3 3 0 010-6zm0 0h.008v.008H12V8.25zM9 15.75h6" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Expert Assistance</h4>
+              <p class="text-sm text-gray-300 leading-tight">Our long-standing relationships with ministries, embassies,
+                and corporate
+                entities make us a preferred service provider.</p>
+            </div>
           </div>
-          <div>
-            <h4 class="text-xl font-semibold">Customer Satisfaction</h4>
-            <p class="text-sm text-gray-300 leading-tight">We prioritize customer satisfaction and provide personalized support and
-              guidance at every step.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Right Section (Image) -->
-    <div class="relative w-full h-auto">
-      <img src="./inner.webp" alt="Insurance Image" class="w-full h-auto object-cover rounded-lg shadow-lg">
-      <div class="absolute top-6 right-6 bg-n-light rounded-lg px-4 py-2 shadow-md flex items-center">
-        <span class="text-n-primary text-2xl font-bold">90%</span>
-        <div class="ml-4">
-          <p class="text-xs text-n-grey">Customer Satisfaction</p>
-          <div class="flex items-center">
-            <span class="text-n-gold">★ ★ ★ ★ ★</span>
+          <!-- Feature 3 -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-n-light text-n-primary rounded-md flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 9.75V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V4.5A2.25 2.25 0 016.75 2.25h6.75L19.5 9.75z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5h6M9 16.5h3" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold">Customer Satisfaction</h4>
+              <p class="text-sm text-gray-300 leading-tight">We prioritize customer satisfaction and provide
+                personalized support and
+                guidance at every step.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <!-- Right Section (Image) -->
+      <div class="relative w-full h-auto">
+        <img src="./inner.webp" alt="Insurance Image" class="w-full h-auto object-cover rounded-lg shadow-lg">
+        <div class="absolute top-6 right-6 bg-n-light rounded-lg px-4 py-2 shadow-md flex items-center">
+          <span class="text-n-primary text-2xl font-bold">90%</span>
+          <div class="ml-4">
+            <p class="text-xs text-n-grey">Customer Satisfaction</p>
+            <div class="flex items-center">
+              <span class="text-n-gold">★ ★ ★ ★ ★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
 
 
 
@@ -646,21 +657,21 @@
   <!-- Pricing Section -->
   <section id="pricing" class="container mx-auto  px-4 pt-32 pb-16 border-b-2 border-n-primary">
     <div class="text-center mb-10">
-      <h4 class="text-lg font-medium uppercase text-n-grey-secondary tracking-wide">Umrah Plans</h4>
-      <h1 class="text-3xl md:text-4xl font-bold text-n-primary">Nusuk VIP Plans</h1>
+      <h4 class="text-lg font-medium uppercase text-n-grey-secondary tracking-wide">Pricing</h4>
+      <h1 class="text-3xl md:text-4xl font-bold text-n-primary">Nusuk VIP UMRAH Plans</h1>
     </div>
     <div class="flex flex-col lg:flex-row gap-6 items-center justify-center">
       <!-- Deluxe Plan -->
       <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
         <p class="text-lg font-normal text-n-grey">Starts at</p>
-        <h2 class="text-4xl font-bold text-n-primary">₹1,05,000 
+        <h2 class="text-4xl font-bold text-n-primary">₹1,05,000
         </h2>
         <h3 class="text-xl font-semibold text-n-primary mt-4">Deluxe Plan</h3>
         <p class="text-gray-500 mt-2">Quality and trust in every service.</p>
         <hr class="my-4">
         <div>
           <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
-          <ul class="list-disc list-inside text-n-grey mt-2">
+          <ul class="list-disc list-inside text-n-grey mt-2 mx-auto w-fit text-left">
             <li>Umrah Visa</li>
             <li>ZamZam Can</li>
             <li>Hotel Stays</li>
@@ -673,10 +684,11 @@
         </div>
         <div class="mt-4">
           <h4 class="text-lg font-medium text-n-grey">Key Features:</h4>
-          <p class="text-n-grey">Ideal for families and homeowners</p>
+          <p class="text-n-grey">Hotel Barakah Mawaddah</p>
           <p class="text-n-grey">Maximum benefits</p>
         </div>
-        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800">Contact Us</button>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800"><a
+            href="./index-nusuk-contact.html">Contact Us</a></button>
       </div>
 
       <!-- Diamond Plan -->
@@ -688,7 +700,7 @@
         <hr class="my-4 border-n-secondary">
         <div>
           <h4 class="text-lg font-medium">Package Included:</h4>
-          <ul class="list-disc list-inside mt-2">
+          <ul class="list-disc list-inside mt-2 mx-auto w-fit text-left">
             <li>Umrah Visa</li>
             <li>ZamZam Can</li>
             <li>Hotel Stays</li>
@@ -701,23 +713,24 @@
         </div>
         <div class="mt-4">
           <h4 class="text-lg font-medium">Key Features:</h4>
-          <p>Ideal for families and homeowners</p>
+          <p>Hotel Makkah Towers</p>
           <p>Maximum benefits</p>
         </div>
-        <button class="bg-n-primary text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-100">Contact Us</button>
+        <button class="bg-n-primary text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-100"><a
+            href="./index-nusuk-contact.html">Contact Us</a></button>
       </div>
 
       <!-- Diamond Plus Plan -->
       <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
         <span class="text-lg font-normal text-n-grey">Starts at</span>
-        <h2 class="text-4xl font-bold text-n-primary">₹1,40,000 
+        <h2 class="text-4xl font-bold text-n-primary">₹1,40,000
         </h2>
         <h3 class="text-xl font-semibold text-n-primary mt-4">Diamond Plan Plan</h3>
         <p class="text-gray-500 mt-2">Quality and trust in every service.</p>
         <hr class="my-4">
         <div>
           <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
-          <ul class="list-disc list-inside text-n-grey mt-2">
+          <ul class="list-disc list-inside text-n-grey mt-2 mx-auto w-fit text-left">
             <li>Umrah Visa</li>
             <li>ZamZam Can</li>
             <li>Hotel Stays</li>
@@ -730,10 +743,78 @@
         </div>
         <div class="mt-4">
           <h4 class="text-lg font-medium text-n-grey">Key Features:</h4>
-          <p class="text-n-grey">Ideal for families and homeowners</p>
+          <p class="text-n-grey">Hotel Safwa Towers 3/4</p>
           <p class="text-n-grey">Maximum benefits</p>
         </div>
-        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800">Contact Us</button>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800"><a
+            href="./index-nusuk-contact.html">Contact Us</a></button>
+      </div>
+    </div>
+
+    <div class="text-center mb-10 pt-16">
+      <h1 class="text-3xl md:text-4xl font-bold text-n-primary">Nusuk VIP ZIYARAT Plans</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-6 items-center justify-center">
+      <!-- Baitul Muqaddas Plan -->
+      <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
+        <p class="text-lg font-normal text-n-grey">Starts at</p>
+        <h2 class="text-4xl font-bold text-n-primary">₹1,52,000
+        </h2>
+        <h3 class="text-xl font-semibold text-n-primary mt-4">Baitul Muqaddas Plan</h3>
+        <p class="text-gray-500 mt-2">Quality and trust in every service.</p>
+        <hr class="my-4">
+        <div>
+          <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
+          <ul class="list-disc list-inside text-n-grey mt-2 mx-auto w-fit text-left">
+            <li>3 Nights Amman (Jordan)</li>
+            <li>3 Nights Baitul Muqaddas</li>
+            <li>2 Nights Taba Border (Egypt)</li>
+            <li>2 Nights Cairo (Egypt)</li>
+            <li>Insurance</li>
+            <li>Visa</li>
+            <li>Hotel Stays</li>
+            <li>Transports</li>
+            <li>Flights</li>
+            <li>Meals</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h4 class="text-lg font-medium text-n-grey">Note:</h4>
+          <p class="text-n-grey">Israel visa is subject to approval</p>
+        </div>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800"><a
+            href="./index-nusuk-contact.html">Contact Us</a></button>
+      </div>
+
+      <!-- Iraq Plan -->
+      <div class="bg-gray-100 rounded-lg shadow-md w-full max-w-sm lg:max-w-md p-6 text-center">
+        <p class="text-lg font-normal text-n-grey">Starts at</p>
+        <h2 class="text-4xl font-bold text-n-primary">₹91,000
+        </h2>
+        <h3 class="text-xl font-semibold text-n-primary mt-4">IRAQ Plan</h3>
+        <p class="text-gray-500 mt-2">Quality and trust in every service.</p>
+        <hr class="my-4">
+        <div>
+          <h4 class="text-lg font-medium text-n-grey">Package Included:</h4>
+          <ul class="list-disc list-inside text-n-grey mt-2 mx-auto w-fit text-left">
+            <li>5 Nights Kizmain/Bagdad</li>
+            <li>3 Nights Karbala</li>
+            <li>2 Nights Najaf</li>
+            <li>Insurance</li>
+            <li>Visa</li>
+            <li>Hotel (Sharing)</li>
+            <li>Transports</li>
+            <li>Flights</li>
+            <li>Meals</li>
+            <li>Ziyarats</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h4 class="text-lg font-medium text-n-grey">Key Features:</h4>
+          <p class="text-n-grey">Full transports and meals</p>
+        </div>
+        <button class="bg-n-algae text-n-secondary py-2 px-6 mt-6 rounded-full hover:bg-gray-800"><a
+            href="./index-nusuk-contact.html">Contact Us</a></button>
       </div>
     </div>
   </section>
@@ -822,7 +903,8 @@
     <!-- Footer Section -->
     <div class="mt-12 text-center">
       <p class="text-n-grey text-sm mb-4">Our clients are at the heart of everything we do..</p>
-      <button class="bg-n-primary text-n-secondary px-6 py-3 rounded-lg text-sm hover:bg-gray-800">Contact Us</button>
+      <button class="bg-n-primary text-n-secondary px-6 py-3 rounded-lg text-sm hover:bg-gray-800"><a
+          href="./index-nusuk-contact.html">Contact Us</a></button>
     </div>
   </div>
 
@@ -830,15 +912,16 @@
   <!-- Testimonials Section -->
   <section class="max-w-7xl mx-auto px-4 py-16">
     <!-- Heading and Link -->
-<div class="flex flex-col md:flex-row justify-between items-center mb-12 text-center md:text-left space-y-4 md:space-y-0">
-  <div>
-    <p class="text-n-primary text-sm font-medium uppercase">Testimonials</p>
-    <h2 class="text-n-primary text-3xl sm:text-4xl font-bold">Hear from Our Clients</h2>
-  </div>
-  <a href="#" class="text-n-primary font-medium text-sm hover:underline md:self-end">
-    See All Testimonials
-  </a>
-</div>
+    <div
+      class="flex flex-col md:flex-row justify-between items-center mb-12 text-center md:text-left space-y-4 md:space-y-0">
+      <div>
+        <p class="text-n-primary text-sm font-medium uppercase">Testimonials</p>
+        <h2 class="text-n-primary text-3xl sm:text-4xl font-bold">Hear from Our Clients</h2>
+      </div>
+      <a href="#" class="text-n-primary font-medium text-sm hover:underline md:self-end">
+        See All Testimonials
+      </a>
+    </div>
 
 
     <!-- Testimonials Grid -->
@@ -854,7 +937,9 @@
             </div>
           </div>
         </div>
-        <p class="text-n-grey text-sm">“Nusuk.Vip made my Umrah trip truly hassle-free! From visa processing to accommodations, everything was perfectly arranged. Their team was available at every step to assist us. Highly recommended!”</p>
+        <p class="text-n-grey text-sm">“Nusuk.Vip made my Umrah trip truly hassle-free! From visa processing to
+          accommodations, everything was perfectly arranged. Their team was available at every step to assist us. Highly
+          recommended!”</p>
       </div>
       <!-- Testimonial Card 1 -->
       <div class="bg-white shadow-md rounded-lg p-6">
@@ -867,7 +952,9 @@
             </div>
           </div>
         </div>
-        <p class="text-n-grey text-sm">“Setting up my business in Dubai seemed overwhelming, but Nusuk.Vip handled everything professionally. Their guidance on legal documentation and company registration saved me time and effort.”</p>
+        <p class="text-n-grey text-sm">“Setting up my business in Dubai seemed overwhelming, but Nusuk.Vip handled
+          everything professionally. Their guidance on legal documentation and company registration saved me time and
+          effort.”</p>
       </div>
       <!-- Testimonial Card 1 -->
       <div class="bg-white shadow-md rounded-lg p-6">
@@ -880,7 +967,9 @@
             </div>
           </div>
         </div>
-        <p class="text-n-grey text-sm">“I needed urgent visa stamping and document attestation for my overseas job. The team at Nusuk.Vip was incredibly efficient and got everything processed on time. Their expertise is unmatched!”</p>
+        <p class="text-n-grey text-sm">“I needed urgent visa stamping and document attestation for my overseas job. The
+          team at Nusuk.Vip was incredibly efficient and got everything processed on time. Their expertise is
+          unmatched!”</p>
       </div>
     </div>
   </section>
@@ -926,7 +1015,7 @@
       <!-- Work Hours -->
       <div class="space-y-2">
         <h3 class="font-semibold text-lg">Work Hours</h3>
-        <p class="flex items-center space-x-2 text-sm text-gray-300">
+        <p class="flex items-center space-x-2 text-sm text-n-secondary">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
             class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -947,7 +1036,7 @@
 
           <span>nemat@nusuk.vip</span>
         </p>
-        <p class="flex items-center space-x-2 text-sm">
+        <p class="flex items-center space-x-2 text-sm text-n-secondary">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
             class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -983,17 +1072,47 @@
   </footer>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuClose = document.getElementById('menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuClose = document.getElementById("menu-close");
+      const menuToggle = document.getElementById("menu-toggle"); // Ensure you have a button with this ID to open the menu
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');
+      const menuLinks = mobileMenu.querySelectorAll("a"); // Select all menu links
+
+      // Function to open menu
+      function openMenu() {
+        mobileMenu.classList.remove("hidden");
+      }
+
+      // Function to close menu
+      function closeMenu() {
+        mobileMenu.classList.add("hidden");
+      }
+
+      // Open menu when the menu toggle button is clicked
+      if (menuToggle) {
+        menuToggle.addEventListener("click", openMenu);
+      }
+
+      // Close menu when the close button is clicked
+      if (menuClose) {
+        menuClose.addEventListener("click", closeMenu);
+      }
+
+      // Close menu when clicking a menu link and navigate
+      menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          closeMenu();
+          const targetHref = this.getAttribute("href");
+
+          // Ensure navigation occurs only if it's a valid link
+          if (targetHref && targetHref !== "#") {
+            window.location.href = targetHref;
+          }
+        });
+      });
     });
 
-    menuClose.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
   </script>
 </body>
 
